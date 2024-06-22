@@ -1,0 +1,15 @@
+.ModeToggleButton {
+    max-width: 26px;
+    max-height: 24px;
+
+    path {
+        fill: #000000;
+    }
+
+    &[data-is-enabled=true] {
+        path {
+            filter: invert(1);
+            fill: #ffffff;
+        }
+    }
+}
