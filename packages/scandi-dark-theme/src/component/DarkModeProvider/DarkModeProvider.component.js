@@ -15,20 +15,21 @@ import { connect } from 'react-redux';
 
 import './DarkModeProvider.style.scss';
 
-/** @namespace myApp/Component/DarkModeProvider/Component/mapStateToProps */
+/** @namespace ScandiDarkTheme/Component/DarkModeProvider/Component/mapStateToProps */
 export const mapStateToProps = (state) => ({
     isDarkModeEnabled: state.DarkModeReducer.enabled,
 });
 
-/** @namespace myApp/Component/DarkModeProvider/Component/mapDispatchToProps */
+/** @namespace ScandiDarkTheme/Component/DarkModeProvider/Component/mapDispatchToProps */
 // eslint-disable-next-line no-unused-vars
 export const mapDispatchToProps = (dispatch) => ({
 });
 
-/** @namespace myApp/Component/DarkModeProvider/Component */
+/** @namespace ScandiDarkTheme/Component/DarkModeProvider/Component */
 export class DarkModeProviderComponent extends PureComponent {
     static propTypes = {
         isDarkModeEnabled: PropTypes.bool.isRequired,
+        // eslint-disable-next-line react/forbid-prop-types
         children: PropTypes.array.isRequired,
     };
 

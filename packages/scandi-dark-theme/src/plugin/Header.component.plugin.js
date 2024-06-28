@@ -1,4 +1,4 @@
-import ModeToggleButton from 'Component/ModeToggleButton';
+import ModeToggleButton from '../component/ModeToggleButton';
 
 import './Header.style.plugin.css';
 

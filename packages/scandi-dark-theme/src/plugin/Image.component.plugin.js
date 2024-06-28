@@ -9,7 +9,7 @@
  * @link https://github.com/scandipwa/scandipwa
  */
 
-import ColorInverter from 'Component/ColorInverter/ColorInverter.container';
+import ColorInverter from '../component/ColorInverter/ColorInverter.container';
 
 // wraps the output of the Image.render function in our ColorInverter component
 export const render = (args, callback) => (

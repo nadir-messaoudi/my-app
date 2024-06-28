@@ -11,12 +11,12 @@
 
 import { DARKMODE_ENABLE } from './DarkMode.action';
 
-/** @namespace myApp/Store/DarkMode/Reducer/getInitialState */
+/** @namespace ScandiDarkTheme/Store/DarkMode/Reducer/getInitialState */
 export const getInitialState = () => ({
     enabled: false,
 });
 
-/** @namespace myApp/Store/DarkMode/Reducer/DarkModeReducer */
+/** @namespace ScandiDarkTheme/Store/DarkMode/Reducer/DarkModeReducer */
 export const DarkModeReducer = (state = getInitialState(), action) => {
     switch (action.type) {
     case DARKMODE_ENABLE:

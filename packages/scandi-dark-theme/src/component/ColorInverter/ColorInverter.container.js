@@ -13,22 +13,23 @@ import PropTypes from 'prop-types';
 import { PureComponent } from 'react';
 import { connect } from 'react-redux';
 
-import { DarkModeProviderComponent } from './DarkModeProvider.component';
+import { ColorInverterComponent } from './ColorInverter.component';
 
-/** @namespace myApp/Component/DarkModeProvider/Container/mapStateToProps */
+/** @namespace ScandiDarkTheme/Component/ColorInverter/Container/mapStateToProps */
 export const mapStateToProps = (state) => ({
     isDarkModeEnabled: state.DarkModeReducer.enabled,
 });
 
-/** @namespace myApp/Component/DarkModeProvider/Container/mapDispatchToProps */
+/** @namespace ScandiDarkTheme/Component/ColorInverter/Container/mapDispatchToProps */
 // eslint-disable-next-line no-unused-vars
 export const mapDispatchToProps = (dispatch) => ({
 });
 
-/** @namespace myApp/Component/DarkModeProvider/Container */
-export class DarkModeProviderContainer extends PureComponent {
+/** @namespace ScandiDarkTheme/Component/ColorInverter/Container */
+export class ColorInverterContainer extends PureComponent {
     static propTypes = {
         isDarkModeEnabled: PropTypes.bool.isRequired,
+        // eslint-disable-next-line react/forbid-prop-types
         children: PropTypes.array.isRequired,
     };
 
@@ -46,7 +47,7 @@ export class DarkModeProviderContainer extends PureComponent {
 
     render() {
         return (
-            <DarkModeProviderComponent
+            <ColorInverterComponent
               { ...this.containerProps() }
             />
         );
@@ -56,4 +57,4 @@ export class DarkModeProviderContainer extends PureComponent {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(DarkModeProviderContainer);
+)(ColorInverterContainer);

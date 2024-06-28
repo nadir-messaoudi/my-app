@@ -9,7 +9,8 @@
  * @link https://github.com/scandipwa/scandipwa
  */
 
-import DarkModeProviderContainer from 'Component/DarkModeProvider/DarkModeProvider.container';
+// eslint-disable-next-line max-len
+import DarkModeProviderContainer from '../component/DarkModeProvider/DarkModeProvider.container';
 
 export const renderRouter = (args, callback) => (
         <DarkModeProviderContainer key="router">{ callback(...args) }</DarkModeProviderContainer>

@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable react/forbid-dom-props */
 /* eslint-disable react/no-redundant-should-component-update */
 /**
  * ScandiPWA - Progressive Web App for Magento
@@ -15,7 +18,7 @@ import { PureComponent } from 'react';
 
 import './ModeToggleButton.style.scss';
 
-/** @namespace myApp/Component/ModeToggleButton/Component */
+/** @namespace ScandiDarkTheme/Component/ModeToggleButton/Component */
 export class ModeToggleButtonComponent extends PureComponent {
     static propTypes = {
         isDarkModeEnabled: PropTypes.bool.isRequired,

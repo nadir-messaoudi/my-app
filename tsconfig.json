@@ -30,12 +30,10 @@
         "./src/**/*",
         "src/**/*",
         "packages/scandi-dark-theme/src/**/*",
-        "node_modules/@scandipwa/scandipwa/src/**/*",
-        "NavigationTabs"
+        "node_modules/@scandipwa/scandipwa/src/**/*"
     ],
     "exclude": [
         "node_modules",
-        "src/store/index.jsx",
-        "NavigationTabs/*"
+        "packages/scandi-dark-theme/src/store/index.jsx"
     ]
 }

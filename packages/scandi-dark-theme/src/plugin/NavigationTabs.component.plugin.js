@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ReactElement } from 'react';
 
-import ModeToggleButton from 'Component/ModeToggleButton';
+import ModeToggleButton from '../component/ModeToggleButton/ModeToggleButton.container';
 
 const renderAccountButton = (args, callback) => (
     <>
