@@ -13,7 +13,7 @@ import { DARKMODE_ENABLE } from './DarkMode.action';
 
 /** @namespace ScandiDarkTheme/Store/DarkMode/Reducer/getInitialState */
 export const getInitialState = () => ({
-    enabled: false,
+    enabled: JSON.parse(localStorage.getItem('isDarkModeEnabled')),
 });
 
 /** @namespace ScandiDarkTheme/Store/DarkMode/Reducer/DarkModeReducer */
